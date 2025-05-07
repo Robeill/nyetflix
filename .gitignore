@@ -1,3 +1,4 @@
 /vendor/
 backend/backend/private.key
 backend/backend/public.key
+node_modules/
