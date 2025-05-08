@@ -8,7 +8,7 @@
     <link href="../assets/images/Icon/Icon.ico" rel="icon" type="image/x-icon" />
     <link href="./styles/index.css" rel="stylesheet" type="text/css" />
     <link href="./styles/main.css" rel="stylesheet" type="text/css" />
-    <link href="./styles/nav.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="./styles/content-row.css" rel="stylesheet" type="text/css" />
     <link href="./styles/top.css" rel="stylesheet" type="text/css" />
     <link href="./styles/footer.css" rel="stylesheet" type="text/css" />
@@ -18,38 +18,49 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-    <body>
-        <nav>
-            <div class="left">
-          <img src="../assets/images/Icon/logo.png" class="brand" />
-          <div class="nav-item small">Browse</div>
-          <ul class="nav-items">
-            <li class="nav-item">Home</li>
-            <li class="nav-item">TV Shows</li>
-            <li class="nav-item">Movies</li>
-            <li class="nav-item">Latest</li>
-            <li class="nav-item">My List</li>
-            <li class="nav-item">Browse by Languages</li>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top px-4 py-3">
+          <div class="container-fluid">
+              <a class="navbar-brand d-flex align-items-center" href="#">
+                  <img src="../assets/images/Icon/logo.png" alt="Netflix" class="me-3" style="width: 100px;" />
+                  <span class="d-lg-none small">Browse</span>
+              </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">TV Shows</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Latest</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Browse by Languages</a></li>
           </ul>
+
+        <ul class="navbar-nav d-flex flex-row gap-3">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i data-feather="search"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i data-feather="bell"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="#" alt="profile" style="width: 30px; height: 30px;" class="rounded-circle me-1" />
+                    <i data-feather="chevron-down"></i>
+                </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+              </li>
+                </ul>
             </div>
-        <div class="right">
-          <ul class="nav-icons">
-            <div class="nav-item icon">
-              <i data-feather="search"></i>
-            </div>
-            <div class="nav-item icon">
-              <i data-feather="bell"></i>
-            </div>
-            <div class="nav-item icon">
-              <!-- src is handled by javascript -->
-              <img
-                alt="profile icon"
-              />
-              <i class="hide" data-feather="chevron-down"></i>
-            </div>
-          </ul>
         </div>
-        </nav>
+      </nav>
 
       <main>
           <div class="top">
