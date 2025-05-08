@@ -52,7 +52,7 @@
             </div>
             </form>
 
-            <p class="mt-4">New to Netflix? <a href="#" class="text-white text-decoration-none">Sign up now</a></p>
+            <p class="mt-4">New to Netflix? <a href="./signup.php" class="text-white text-decoration-none">Sign up now</a></p>
             <small class="text-secondary">
             This page is protected by Google reCAPTCHA to ensure you're not a bot.
             <a href="#" class="text-decoration-none text-white">Learn more.</a>

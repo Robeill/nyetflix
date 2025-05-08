@@ -31,7 +31,7 @@
             </form>
 
             <div class="mt-4 small text-secondary">
-            <p>Already have an account? <a href="#" class="text-white text-decoration-none">Sign in now</a>.</p>
+            <p>Already have an account? <a href="./signin.php" class="text-white text-decoration-none">Sign in now</a>.</p>
             <p class="mt-2">
                 This page is protected by Google reCAPTCHA to ensure you're not a bot.
                 <a href="#" class="text-white text-decoration-none">Learn more</a>.
